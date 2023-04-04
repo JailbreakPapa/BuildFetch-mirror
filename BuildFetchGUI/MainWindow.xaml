@@ -1,0 +1,39 @@
+﻿<Window x:Class="BuildFetchGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BuildFetchGUI"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Title="Khaos - Build Fetch" Height="777" Width="1250" Foreground="#FF100A0A" Background="#FF1B1717">
+    <Border BorderBrush="#FF003EFF" BorderThickness="1.4" Width="{Binding Width}" Height="{Binding Height}">
+        <Grid>
+            <Grid Margin="840,0,0,740">
+                <Button x:Name="Bt_Waf" Margin="374,0,0,0">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/waf40.png"/>
+                    </Button.Background>
+                    <Image Source="/waf40.png" HorizontalAlignment="Right" >
+                    </Image>
+                </Button>
+
+            </Grid>
+            <TextBox Margin="59,39,0,670" Foreground="#FF100A0A" Background="#FF1B1717" Text="Build Fetch" FontSize="36" FontFamily="Franklin Gothic Medium" IsReadOnly="True" BorderThickness ="0" HorizontalAlignment="Left" Width="659"/>
+            <TextBlock x:Name="BuildOutput" Margin="40,134,488,55" Background="#FF272829">
+                TEST TEXT
+
+            </TextBlock>
+            <!-- This list view should display all data regarding what projects are being used, if they are using fast-build, ey-->
+            <ListView x:Name="BuildInfo_LView" Margin="840,134,38,55" Background="#FF272829">
+                <ListView.View>
+                    <GridView x:Name="BuildInfo_GV">
+                        
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="waf40.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Khaos-BuildFetch\Khaos-BuildFetch.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="waf40.png" />
+  </ItemGroup>
+
+</Project>

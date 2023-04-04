@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GUI", "GUI", "{1D6307C9-2360-4B84-8BBD-0306D5B7DB19}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildFetchGUI", "BuildFetchGUI\BuildFetchGUI.csproj", "{319750CE-10A4-4301-8A63-9C0005D796FF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4D71B373-ABD1-4471-BD73-C680556840F2} = {4D71B373-ABD1-4471-BD73-C680556840F2}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Khaos-BuildFetch", "Khaos-BuildFetch\Khaos-BuildFetch.csproj", "{4D71B373-ABD1-4471-BD73-C680556840F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Khaos-BuildFetch-Tests", "Khaos-BuildFetch-Tests\Khaos-BuildFetch-Tests.csproj", "{A313D214-562D-4DDF-BC3B-16365FCDDC31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EngineTools", "EngineTools", "{26D0EFCB-9608-4ABC-A10C-828A7295CC69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KhaosFetch", "KhaosFetch\KhaosFetch.csproj", "{66D1F936-9D27-448C-AD3D-5F279A807443}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{319750CE-10A4-4301-8A63-9C0005D796FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319750CE-10A4-4301-8A63-9C0005D796FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319750CE-10A4-4301-8A63-9C0005D796FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319750CE-10A4-4301-8A63-9C0005D796FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D71B373-ABD1-4471-BD73-C680556840F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D71B373-ABD1-4471-BD73-C680556840F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D71B373-ABD1-4471-BD73-C680556840F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D71B373-ABD1-4471-BD73-C680556840F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A313D214-562D-4DDF-BC3B-16365FCDDC31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A313D214-562D-4DDF-BC3B-16365FCDDC31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A313D214-562D-4DDF-BC3B-16365FCDDC31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A313D214-562D-4DDF-BC3B-16365FCDDC31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66D1F936-9D27-448C-AD3D-5F279A807443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D1F936-9D27-448C-AD3D-5F279A807443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D1F936-9D27-448C-AD3D-5F279A807443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D1F936-9D27-448C-AD3D-5F279A807443}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{319750CE-10A4-4301-8A63-9C0005D796FF} = {1D6307C9-2360-4B84-8BBD-0306D5B7DB19}
+		{66D1F936-9D27-448C-AD3D-5F279A807443} = {26D0EFCB-9608-4ABC-A10C-828A7295CC69}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EEFD848E-D92C-4E00-AD41-2611B131BF70}
+	EndGlobalSection
+EndGlobal
