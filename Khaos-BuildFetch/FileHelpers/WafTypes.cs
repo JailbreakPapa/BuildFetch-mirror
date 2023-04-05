@@ -26,9 +26,10 @@ namespace Khaos_BuildFetch.FileHelpers
             StreamReader sr = new StreamReader(fileStream);
             List<String> result = new List<String>();
             string sub;
-            while ((sub = sr.ReadLine())
+            while (sr.ReadLine()
                    != null)
             {
+                sub = sr.ReadLine();
                 if(sub.Contains("SUBFOLDERS") && sub.Contains(" = "))
                 {
                     ///Recurse Those Lines. make sure they contain ('').

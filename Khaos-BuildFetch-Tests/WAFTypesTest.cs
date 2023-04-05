@@ -12,7 +12,7 @@ namespace Khaos_BuildFetch_Tests
     {   
         
         [TestMethod]
-        /// We will use the wscript file that is found in: D:\Khaos\dev\Code. the test file assumes that we are grabbing from the output directory.
+        /// We will use the wscript file that is found in: D:\frost\dev\Code. the test file assumes that we are grabbing from the output directory.
         /// This test should find the declaration of the sub folders in the wscript, then return a list of strings containing what was listed.
         public void Test_GetFileSubFolders()
         {
@@ -23,13 +23,15 @@ namespace Khaos_BuildFetch_Tests
             foreach (string test_string in subfolders)
             {
                 Assert.IsNotNull(test_string);
+
                 ///NOTE: We don't care if it contains ('), as we could just filter that out on the returned list.
-                if (test_string.Contains(",")) { return; }
-                if (test_string.Contains("SUBFOLDERS")) { return; }
-                if (test_string.Contains("[")) { return; }
-                if (test_string.Contains("]")) { return; }
+                if (test_string.Contains(",")) { Assert.Fail(); }
+                if (test_string.Contains("SUBFOLDERS")) { Assert.Fail(); }
+                if (test_string.Contains("[")) { Assert.Fail(); }
+                if (test_string.Contains("]")) { Assert.Fail(); }
                 Console.Write(test_string);
             }
+
         }
     }
 }

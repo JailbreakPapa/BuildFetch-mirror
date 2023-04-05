@@ -19,7 +19,6 @@
                     <Image Source="/waf40.png" HorizontalAlignment="Right" >
                     </Image>
                 </Button>
-
             </Grid>
             <TextBox Margin="59,39,0,670" Foreground="#FF100A0A" Background="#FF1B1717" Text="Build Fetch" FontSize="36" FontFamily="Franklin Gothic Medium" IsReadOnly="True" BorderThickness ="0" HorizontalAlignment="Left" Width="659"/>
             <TextBlock x:Name="BuildOutput" Margin="40,134,488,55" Background="#FF272829">
